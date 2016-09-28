@@ -9,6 +9,10 @@ describe 'Fizzbuzz game' do
     it '5' do
       expect(is_divisible_by_5?(5)).to be_truthy
     end
+
+    it '15' do
+      expect(is_divisible_by_15?(15)).to be_truthy
+    end
   end
 
   context 'knows when number is not divisible by' do
@@ -18,6 +22,10 @@ describe 'Fizzbuzz game' do
 
     it '5' do
       expect(is_divisible_by_5?(1)).not_to be_truthy
+    end
+
+    it '15' do
+      expect(is_divisible_by_15?(1)).not_to be_truthy
     end
   end
 end
