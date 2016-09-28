@@ -28,4 +28,10 @@ describe 'Fizzbuzz game' do
       expect(is_divisible_by_15?(1)).not_to be_truthy
     end
   end
+
+  context 'when playing Fizzbuzz' do
+    it 'returns the number' do
+      expect(fizzbuzz(1)).to eq 1
+    end
+  end
 end
