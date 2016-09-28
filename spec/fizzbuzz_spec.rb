@@ -33,5 +33,9 @@ describe 'Fizzbuzz game' do
     it 'returns the number' do
       expect(fizzbuzz(1)).to eq 1
     end
+
+    it 'returns Fizz when the number is divisible by 3' do
+      expect(fizzbuzz(3)).to eq 'Fizz'
+    end
   end
 end
