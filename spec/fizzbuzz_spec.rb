@@ -41,5 +41,9 @@ describe 'Fizzbuzz game' do
     it 'returns Buzz when number is divisible by 5' do
       expect(fizzbuzz(5)).to eq 'Buzz'
     end
+
+    it 'returns FizzBuzz when number is divisible by 15' do
+      expect(fizzbuzz(15)).to eq 'FizzBuzz'
+    end
   end
 end
