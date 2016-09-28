@@ -9,7 +9,7 @@ describe 'Fizzbuzz game' do
 
   context 'knows when a number is not divisible by 3' do
     it 'not 3' do
-      expect(is_divisible_by_3?(1)).to be_falsey
+      expect(is_divisible_by_3?(1)).not_to be_truthy
     end
   end
 
@@ -21,7 +21,7 @@ describe 'Fizzbuzz game' do
 
   context 'knows when a number is not divisible by 5' do
     it 'not 5' do
-      expect(is_divisible_by_5?(1)).to be_falsey
+      expect(is_divisible_by_5?(1)).not_to be_truthy
     end
   end
 
@@ -33,7 +33,7 @@ describe 'Fizzbuzz game' do
 
   context 'knows when a number is not divisible by 15' do
     it 'not 15' do
-      expect(is_divisible_by_15?(1)).to be_falsey
+      expect(is_divisible_by_15?(1)).not_to be_truthy
     end
   end
 end
